@@ -27,8 +27,8 @@ class SearchBar extends Component {
                     onChange={this.handleChange}
                 >
                     {this.props.countries.map(country => (
-                        <option key={country.alpha2Code} value={country.alpha2Code}>
-                            {country.name}
+                        <option key={country.code} value={country.code}>
+                            {country.name} - { country.code} - {country.flag}
                         </option>
                     ))}
                 </Select>
